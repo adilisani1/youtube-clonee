@@ -6,7 +6,7 @@ const options = {
     maxResults: "50",
   },
   headers: {
-    "x-rapidapi-key": import.meta.env.RAPID_API_KEY,
+    "x-rapidapi-key": import.meta.env.VITE_RAPID_API_KEY,
     "x-rapidapi-host": "youtube-v31.p.rapidapi.com",
   },
 };
