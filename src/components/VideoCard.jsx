@@ -13,7 +13,7 @@ const VideoCard = ({
             <div className="w-full " >
                 <div className="flex flex-col">
                     <img
-                        className="w-full h-72 object-contain"
+                        className="w-full  object-contain mb-2 mt-2"
                         src={snippet?.thumbnails?.high?.url}
                         alt={`Thumbnail for ${snippet?.title}`}
                     />

@@ -11,8 +11,9 @@ import {
 function App() {
   return (
     <>
-    <Navbar />
-    <Router>
+      <Router>
+        <Navbar />
+
       <Routes>
         <Route path="/" exact element={<Feed />} />
         <Route path="/video/:id" element={<VideoDetail />} />

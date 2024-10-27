@@ -19,7 +19,6 @@ import { CgGym } from "react-icons/cg";
 
 export const categories = [
   { name: "New", icon: GoHomeFill },
-  { name: "Apna College", icon: LuCode },
   { name: "Coding", icon: LuCode },
   { name: "Lama Dev", icon: LuCode },
   { name: "ReactJS", icon: LuCode },
