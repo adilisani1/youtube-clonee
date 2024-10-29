@@ -30,6 +30,7 @@ const Navbar = () => {
           className='  outline-none px-4  bg-transparent md:w-96'
           placeholder='Search...'
           value={searchTerm}
+          onKeyDown={(e) => e.key === 'Enter' && onHandleSubmit(e)}  
           onChange={(e) => setSearchTerm(e.target.value)}
 
         />
