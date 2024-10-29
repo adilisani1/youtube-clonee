@@ -4,6 +4,7 @@ import ReactPlayer from 'react-player';
 import { useParams } from 'react-router-dom';
 import { FaCircleCheck } from 'react-icons/fa6';
 import Videos from './Videos';
+import { IoMdThumbsUp } from "react-icons/io";
 
 const VideoDetail = () => {
 
@@ -53,17 +54,17 @@ const VideoDetail = () => {
 
             <div className="flex justify-between items-center px-4 py-4">
               <div className=''>
-                <h1 className="text-2xl font-bold">{title}</h1>
+                <h1 className="text-2xl font-bold mb-1">{title}</h1>
                 <p className="text-gray-800 text-md flex items-center gap-2">
                   {channelTitle}
-                  <FaCircleCheck className='text-red-400' />
+                  <FaCircleCheck className='text-red-400 mt-1' />
                 </p>
               </div>
               <div className='flex gap-2 justify-end'>
-                <p className="text-gray-700 p-2 rounded-full text-sm bg-gray-300">
+                <p className="text-black px-3 py-2 rounded-full text-sm bg-gray-100 shadow-lg">
                   {parseInt(viewCount).toLocaleString()} views
                 </p>
-                <p className="text-gray-700 p-2 rounded-full text-sm bg-gray-300">
+                <p className="text-black px-3 rounded-full text-sm bg-gray-100 shadow-lg flex gap-1 items-center">
                   {parseInt(likeCount).toLocaleString()} likes
                 </p>
               </div>
