@@ -10,7 +10,7 @@ const Feed = () => {
   useEffect(() => {
     fetchFromAPI(`search?part=snippet&q=${selectedCat}`)
       .then((data) => {
-        setVideos(data.items);
+        setVideos(data?.items);
       });
   }, [selectedCat]);
 
@@ -24,7 +24,6 @@ const Feed = () => {
       <div className=' flex-[2] h-[90vh] overflow-y-scroll scrollbar-hide  p-4 '>
         <h4 className='text-xl font-medium pb-4'>{selectedCat} <span className=' text-red-500'>videos</span></h4>
         <Videos videos={videos} />
-
       </div>
     </div>
 
