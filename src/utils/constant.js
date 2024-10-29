@@ -20,7 +20,7 @@ import { CgGym } from "react-icons/cg";
 export const categories = [
   { name: "New", icon: GoHomeFill },
   { name: "Coding", icon: LuCode },
-  { name: "Lama Dev", icon: LuCode },
+  { name: "Programming with Mosh", icon: LuCode },
   { name: "ReactJS", icon: LuCode },
   { name: "NextJS", icon: LuCode },
   { name: "Music", icon: MdMusicNote },

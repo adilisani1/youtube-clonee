@@ -1,7 +1,23 @@
+import { useState } from "react";
 import { CiSearch } from "react-icons/ci";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const navigate = useNavigate();
+
+  const onHandleSubmit = (e) => {
+    e.preventDefault();
+
+    if (searchTerm) {
+      navigate(`/search/${searchTerm}`);
+      setSearchTerm('');
+    }
+
+  };
+
   return (
     <div className='flex justify-between px-4 pt-2 py-3 sticky top-0 bg-white shadow-sm'>
       <Link to="/" className="flex items-center">
@@ -13,8 +29,11 @@ const Navbar = () => {
         <input
           className='  outline-none px-4  bg-transparent md:w-96'
           placeholder='Search...'
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+
         />
-        <button className="text-gray-600 p-3 bg-gray-200">
+        <button className="text-gray-600 p-3 bg-gray-200" onClick={onHandleSubmit}>
           <CiSearch />
         </button>
       </div>
