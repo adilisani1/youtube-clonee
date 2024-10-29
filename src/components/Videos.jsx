@@ -9,7 +9,7 @@ const Videos = ({ videos, columnLayout }) => {
     <div
       className={`${columnLayout
         ? 'flex flex-col gap-4 px-5 py-5'
-        : 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:px-5 px-5 md:py-5 py-5' // Default grid layout
+        : 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:px-2 px-5 md:py-5 py-5' 
         }`}
     >
       {videos.map((video, index) => (
